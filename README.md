@@ -1,6 +1,6 @@
-# sers_projektni_teden
+# first_test_app
 
-S3R5 projektni teden; 16-20. 1. 2023
+A new Flutter project.
 
 ## Getting Started
 

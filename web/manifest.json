@@ -1,11 +1,11 @@
 {
-    "name": "sers_projektni_teden",
-    "short_name": "sers_projektni_teden",
+    "name": "first_test_app",
+    "short_name": "first_test_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "S3R5 projektni teden; 16-20. 1. 2023",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

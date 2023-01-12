@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.projekt" "\0"
-            VALUE "FileDescription", "sers_projektni_teden" "\0"
+            VALUE "CompanyName", "com.example.fluttertestapp" "\0"
+            VALUE "FileDescription", "first_test_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "sers_projektni_teden" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.projekt. All rights reserved." "\0"
-            VALUE "OriginalFilename", "sers_projektni_teden.exe" "\0"
-            VALUE "ProductName", "sers_projektni_teden" "\0"
+            VALUE "InternalName", "first_test_app" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.example.fluttertestapp. All rights reserved." "\0"
+            VALUE "OriginalFilename", "first_test_app.exe" "\0"
+            VALUE "ProductName", "first_test_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

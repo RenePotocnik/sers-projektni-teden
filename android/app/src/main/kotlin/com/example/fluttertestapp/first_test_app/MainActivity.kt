@@ -1,4 +1,4 @@
-package com.projekt.sers_projektni_teden
+package com.example.fluttertestapp.first_test_app
 
 import io.flutter.embedding.android.FlutterActivity
 

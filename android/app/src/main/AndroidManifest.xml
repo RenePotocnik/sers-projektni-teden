@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.projekt.sers_projektni_teden">
+    package="com.example.fluttertestapp.first_test_app">
    <application
-        android:label="sers_projektni_teden"
+        android:label="first_test_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

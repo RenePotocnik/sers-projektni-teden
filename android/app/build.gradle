@@ -43,15 +43,14 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.projekt.sers_projektni_teden"
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.example.fluttertestapp.first_test_app"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-
-        manifestPlaceholders = [applicationName: "android.app.Application"]
     }
 
     buildTypes {
@@ -61,7 +60,6 @@ android {
             signingConfig signingConfigs.debug
         }
     }
-    namespace 'com.projekt.sers_projektni_teden'
 }
 
 flutter {
