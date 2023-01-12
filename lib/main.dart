@@ -85,7 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/images/SERS_Flutter.png'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('assets/images/SERS_Flutter.png',
+                width: MediaQuery.of(context).size.width * 0.5,
+              ),
+            ),
 
             const Text(
               'You have pushed the button this many times:',
