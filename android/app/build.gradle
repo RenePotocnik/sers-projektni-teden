@@ -43,9 +43,8 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.fluttertestapp.first_test_app"
-        manifestPlaceholders = [applicationName: "android.app.Application"]
+        applicationId "com.projekt.sers_projektni_teden"
+//        manifestPlaceholders = [applicationName: "android.app.Application"]
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
         minSdkVersion flutter.minSdkVersion
