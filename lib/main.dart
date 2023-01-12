@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Vpisi stevilo ce si kul :)',
+              'Vpisi stevilo ce si kul :) :(',
             ),
             TextField(
               controller: txt_controller,
