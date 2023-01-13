@@ -73,7 +73,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Image.asset('assets/images/SERS_Flutter.png',
+              child: Image.asset(
+                'assets/images/SERS_Flutter.png',
                 width: MediaQuery.of(context).size.width * 0.5,
               ),
             ),
@@ -81,15 +82,15 @@ class _MyHomePageState extends State<MyHomePage> {
               'Vpisi stevilo ce si kul :) :( :)',
             ),
             TextField(
-              controller: txt_controller,
-              onChanged: (String value) {
-                _CalculateCounter();
-              },
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Enter the number of kWh electricity for the previous month",
-              )
-            ),
+                controller: txt_controller,
+                onChanged: (String value) {
+                  _CalculateCounter();
+                },
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText:
+                      "Enter the number of kWh electricity for the previous month",
+                )),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
