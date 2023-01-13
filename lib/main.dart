@@ -49,11 +49,11 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   num _counter = 0.0;
-  var txt_controller = TextEditingController();
+  var txtController = TextEditingController();
 
-  void _CalculateCounter() {
+  void calculateCounter() {
     setState(() {
-      _counter = 0.2357 * double.parse(txt_controller.text);
+      _counter = 0.2357 * double.parse(txtController.text);
     });
   }
 
@@ -82,9 +82,9 @@ class _MyHomePageState extends State<MyHomePage> {
               'Vpisi stevilo ce si kul :) :( :)',
             ),
             TextField(
-                controller: txt_controller,
+                controller: txtController,
                 onChanged: (String value) {
-                  _CalculateCounter();
+                  calculateCounter();
                 },
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _CalculateCounter,
+        onPressed: calculateCounter,
         tooltip: 'Calculate',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
