@@ -3,7 +3,7 @@
    <application
         android:label="SERS Projektni Teden"
         android:name="${applicationName}"
-        android:icon="@mipmap/sers_flutter">
+        android:icon="@mipmap/sers_logo">
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -6,6 +6,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/sers_flutter" />
+            android:src="@mipmap/sers_logo" />
     </item>
 </layer-list>
