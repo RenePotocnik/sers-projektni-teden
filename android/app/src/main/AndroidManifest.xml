@@ -3,7 +3,7 @@
    <application
         android:label="SERS Projektni Teden"
         android:name="${applicationName}"
-        android:icon="@mipmap/sers_eco_logo_cropped">
+        android:icon="@mipmap/serseco_logo">
         <activity
             android:name=".MainActivity"
             android:exported="true"
