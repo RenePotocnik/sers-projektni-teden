@@ -6,6 +6,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/sers_logo" />
+            android:src="@mipmap/sers_eco_logo_cropped" />
     </item>
 </layer-list>
