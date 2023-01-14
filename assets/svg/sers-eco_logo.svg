@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Shapes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <g id="ECO">
+    <g id="E">
+      <rect x="548.94" y="1214.77" width="102.8" height="102.8" transform="translate(-719.48 795.36) rotate(-45)" style="fill: #59bb5a;"/>
+      <rect x="548.94" y="1359.96" width="102.8" height="102.8" transform="translate(-822.15 837.88) rotate(-45)" style="fill: #59bb5a;"/>
+      <polyline points="745.73 1338.67 673.03 1411.36 600.34 1338.67" style="fill: #78c36f;"/>
+      <polyline points="600.34 1338.67 673.03 1265.98 745.73 1338.67" style="fill: #116f38;"/>
+      <rect x="621.63" y="1432.65" width="102.8" height="102.8" transform="translate(99.56 3009.35) rotate(-135)" style="fill: #116f38;"/>
+      <polyline points="818.42 1556.75 745.73 1484.05 673.03 1556.75" style="fill: #116f38;"/>
+      <rect x="621.63" y="1142.08" width="102.8" height="102.8" transform="translate(-646.79 825.47) rotate(-45)" style="fill: #78c36f;"/>
+      <polyline points="673.03 1120.79 745.73 1193.48 818.42 1120.79" style="fill: #78c36f;"/>
+    </g>
+    <g id="C">
+      <rect x="839.71" y="1214.67" width="102.8" height="102.8" transform="translate(-634.25 1000.94) rotate(-45)" style="fill: #59bb5a;"/>
+      <rect x="839.71" y="1359.86" width="102.8" height="102.8" transform="translate(-736.92 1043.46) rotate(-45)" style="fill: #59bb5a;"/>
+      <polyline points="745.73 1338.57 818.42 1265.88 891.11 1338.57" style="fill: #78c36f;"/>
+      <polyline points="891.11 1338.57 818.42 1411.27 745.73 1338.57" style="fill: #116f38;"/>
+      <rect x="912.4" y="1432.56" width="102.8" height="102.8" transform="translate(596 3214.79) rotate(-135)" style="fill: #116f38;"/>
+      <polyline points="1109.19 1556.65 1036.5 1483.96 963.8 1556.65" style="fill: #116f38;"/>
+      <rect x="912.4" y="1141.98" width="102.8" height="102.8" transform="translate(-561.56 1031.05) rotate(-45)" style="fill: #78c36f;"/>
+      <polyline points="963.8 1120.69 1036.5 1193.38 1109.19 1120.69" style="fill: #78c36f;"/>
+    </g>
+    <g id="O">
+      <polyline points="1181.48 1556.55 1254.18 1483.86 1326.87 1556.55" style="fill: #116f38;"/>
+      <polyline points="1326.87 1120.59 1254.18 1193.28 1181.48 1120.59" style="fill: #78c36f;"/>
+      <polyline points="1036.1 1265.88 1108.79 1193.19 1181.48 1265.88" style="fill: #78c36f;"/>
+      <polyline points="1181.43 1265.88 1108.74 1338.57 1036.05 1265.88" style="fill: #116f38;"/>
+      <polyline points="1035.91 1411.16 1108.6 1338.47 1181.29 1411.16" style="fill: #78c36f;"/>
+      <polyline points="1181.48 1411.16 1108.79 1483.85 1036.1 1411.16" style="fill: #116f38;"/>
+      <rect x="1130.08" y="1432.46" width="102.8" height="102.8" transform="translate(967.67 3368.55) rotate(-135)" style="fill: #59bb5a;"/>
+      <rect x="1130.03" y="1141.79" width="102.8" height="102.8" transform="translate(-497.68 1184.88) rotate(-45)" style="fill: #59bb5a;"/>
+      <polyline points="1036.29 1265.78 1108.99 1338.48 1036.29 1411.17" style="fill: #59bb5a;"/>
+      <polyline points="1472.16 1265.98 1399.47 1193.28 1326.77 1265.98" style="fill: #78c36f;"/>
+      <polyline points="1326.83 1265.98 1399.52 1338.67 1472.21 1265.98" style="fill: #116f38;"/>
+      <polyline points="1472.35 1411.26 1399.66 1338.56 1326.97 1411.26" style="fill: #78c36f;"/>
+      <polyline points="1326.77 1411.26 1399.47 1483.95 1472.16 1411.26" style="fill: #116f38;"/>
+      <rect x="1275.37" y="1432.56" width="102.8" height="102.8" transform="translate(-660.71 1372.81) rotate(-45)" style="fill: #59bb5a;"/>
+      <rect x="1275.43" y="1141.88" width="102.8" height="102.8" transform="translate(1421.25 2975.27) rotate(-135)" style="fill: #59bb5a;"/>
+      <polyline points="1471.97 1265.88 1399.27 1338.57 1471.97 1411.27" style="fill: #59bb5a;"/>
+    </g>
+  </g>
+  <g id="SERS_2" data-name="SERS 2">
+    <g id="R">
+      <polyline points="1000 443.54 1109.14 552.68 1000 661.81" style="fill: #005594;"/>
+      <polyline points="1000 661.81 1109.14 770.95 1000 880.08" style="fill: #5cc4f0;"/>
+      <rect x="1031.96" y="802.91" width="154.34" height="154.34" transform="translate(1271.1 2286.67) rotate(-135)" style="fill: #43b2e6;"/>
+      <rect x="1250.24" y="584.64" width="154.34" height="154.34" transform="translate(1798.05 2068.4) rotate(-135)" style="fill: #43b2e6;"/>
+      <rect x="1141.1" y="475.51" width="154.34" height="154.34" transform="translate(1688.92 1804.93) rotate(-135)" style="fill: #5cc4f0;"/>
+      <rect x="1141.1" y="912.05" width="154.34" height="154.34" transform="translate(1380.23 2550.15) rotate(-135)" style="fill: #005594;"/>
+      <polyline points="1109.14 770.95 1218.27 880.08 1327.41 770.95" style="fill: #5cc4f0;"/>
+      <polyline points="1218.27 443.54 1109.14 552.68 1000 443.54" style="fill: #43b2e6;"/>
+      <polyline points="1436.54 1098.35 1327.41 989.22 1218.27 1098.35" style="fill: #005594;"/>
+      <polyline points="1109.14 770.95 1218.27 661.81 1327.41 770.95" style="fill: #005594;"/>
+    </g>
+    <g id="E-2" data-name="E">
+      <rect x="595.42" y="584.79" width="154.34" height="154.34" transform="translate(-271.08 669.48) rotate(-45)" style="fill: #43b2e6;"/>
+      <rect x="595.42" y="802.77" width="154.34" height="154.34" transform="translate(-425.21 733.32) rotate(-45)" style="fill: #43b2e6;"/>
+      <polyline points="890.86 770.8 781.73 879.94 672.59 770.8" style="fill: #5cc4f0;"/>
+      <polyline points="672.59 770.8 781.73 661.67 890.86 770.8" style="fill: #005594;"/>
+      <rect x="704.56" y="911.9" width="154.34" height="154.34" transform="translate(635.12 2241.22) rotate(-135)" style="fill: #005594;"/>
+      <polyline points="1000 1098.21 890.86 989.07 781.73 1098.21" style="fill: #005594;"/>
+      <rect x="704.56" y="475.65" width="154.34" height="154.34" transform="translate(-161.94 714.68) rotate(-45)" style="fill: #5cc4f0;"/>
+      <polyline points="781.73 443.69 890.86 552.82 1000 443.69" style="fill: #5cc4f0;"/>
+    </g>
+    <g id="S_2" data-name="S 2">
+      <rect x="1686.78" y="802.77" width="154.34" height="154.34" transform="translate(-105.56 1505.03) rotate(-45)" style="fill: #43b2e6;"/>
+      <rect x="1468.51" y="584.5" width="154.34" height="154.34" transform="translate(-15.15 1286.76) rotate(-45)" style="fill: #43b2e6;"/>
+      <rect x="1577.64" y="475.36" width="154.34" height="154.34" transform="translate(93.98 1331.96) rotate(-45)" style="fill: #5cc4f0;"/>
+      <polyline points="1763.95 770.8 1654.81 879.94 1545.68 770.8" style="fill: #5cc4f0;"/>
+      <polyline points="1654.81 443.4 1763.95 552.53 1873.08 443.4" style="fill: #5cc4f0;"/>
+      <polyline points="1763.95 770.8 1654.81 661.67 1545.68 770.8" style="fill: #005594;"/>
+      <rect x="1577.64" y="911.9" width="154.34" height="154.34" transform="translate(-214.7 1459.82) rotate(-45)" style="fill: #005594;"/>
+      <polyline points="1436.54 1098.21 1545.68 989.07 1654.81 1098.21" style="fill: #005594;"/>
+    </g>
+    <g id="S_1" data-name="S 1">
+      <rect x="377.15" y="802.91" width="154.34" height="154.34" transform="translate(-489.24 579.03) rotate(-45)" style="fill: #43b2e6;"/>
+      <rect x="158.88" y="584.64" width="154.34" height="154.34" transform="translate(-398.83 360.76) rotate(-45)" style="fill: #43b2e6;"/>
+      <rect x="268.02" y="475.51" width="154.34" height="154.34" transform="translate(-289.7 405.96) rotate(-45)" style="fill: #5cc4f0;"/>
+      <rect x="268.02" y="912.05" width="154.34" height="154.34" transform="translate(-598.38 533.82) rotate(-45)" style="fill: #005594;"/>
+      <polyline points="454.32 770.95 345.19 880.08 236.05 770.95" style="fill: #5cc4f0;"/>
+      <polyline points="345.19 443.54 454.32 552.68 563.46 443.54" style="fill: #5cc4f0;"/>
+      <polyline points="126.92 1098.35 236.05 989.22 345.19 1098.35" style="fill: #005594;"/>
+      <polyline points="454.32 770.95 345.19 661.81 236.05 770.95" style="fill: #005594;"/>
+    </g>
+  </g>
+</svg>

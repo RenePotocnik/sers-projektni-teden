@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -73,8 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Image.asset(
-                'assets/images/SERS_Flutter.png',
+              child: SvgPicture.asset(
+                'assets/svg/sers-eco_logo.svg',
                 width: MediaQuery.of(context).size.width * 0.5,
               ),
             ),
