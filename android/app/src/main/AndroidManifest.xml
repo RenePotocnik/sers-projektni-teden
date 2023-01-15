@@ -2,7 +2,6 @@
     package="com.projekt.sers_projektni_teden">
    <application
         android:label="SERS Projektni Teden"
-        android:name="${applicationName}"
         android:icon="@mipmap/serseco_logo">
         <activity
             android:name=".MainActivity"
