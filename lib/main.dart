@@ -47,8 +47,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void calculateCounter() {
     setState(() {
-      _counter = 0.2357 * double.parse(txtController.text);
+      _counter = (0.2357 * double.parse(txtController.text)).round();
     });
+  }
+  String isFat() {
+    if (_counter > 10) {
+      return "You are fat";
+    }
+    return "";
   }
 
   @override
@@ -83,20 +89,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText:
-                      "Enter the number of kWh electricity for the previous month",
+                      "Enter electricity spent per month in kWh",
                 )),
             Text(
-              '$_counter',
+              'Bread consumed: $_counter\n',
+              style: Theme.of(context).textTheme.headline6,
+            ),
+            Text(
+              isFat(),
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: calculateCounter,
-        tooltip: 'Calculate',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
