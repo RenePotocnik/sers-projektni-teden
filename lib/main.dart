@@ -43,21 +43,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  num _counter = 0.0;
-  var txtController = TextEditingController();
-
-  void calculateCounter() {
-    setState(() {
-      _counter = (0.2357 * double.parse(txtController.text)).round();
-    });
-  }
-  String isFat() {
-    if (_counter > 10) {
-      return "You are fat";
-    }
-    return "";
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,30 +64,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: MediaQuery.of(context).size.width * 0.5,
               ),
             ),
-            const Text(
-              'Vpisi stevilo ce si kul :) :( :)',
-            ),
-            TextField(
-                controller: txtController,
-                onChanged: (String value) {
-                  calculateCounter();
-                },
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText:
-                      "Enter electricity spent per month in kWh",
-                )),
-            Text(
-              'Bread consumed: $_counter\n',
-              style: Theme.of(context).textTheme.headline6,
-            ),
-            Text(
-              isFat(),
-              style: Theme.of(context).textTheme.headline4,
-            ),
+
+            // Button to navigate user to `calculateCarbonEmissions`
             TextButton(
               style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade900),
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                      side: BorderSide(color: Colors.grey.shade900)
+                  ),
+                ),
               ),
               onPressed: () {
                 // Navigate the user to the second screen
@@ -112,7 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   MaterialPageRoute(builder: (context) => const Calculate()),
                 );
               },
-              child: const Text('Calculate CO2 emissions'),
+              child: const Text(
+                ' Calculate CO2 emissions ',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
             )
 
           ],
