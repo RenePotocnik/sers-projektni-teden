@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:first_test_app/calculateCarbonEmissions.dart';
+
+import 'calculateCarbonEmissions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -68,31 +69,32 @@ class _MyHomePageState extends State<MyHomePage> {
             // Button to navigate user to `calculateCarbonEmissions`
             TextButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade900),
+                  // backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade900),
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0),
+                    borderRadius: BorderRadius.circular(100.0),
                       side: BorderSide(color: Colors.grey.shade900)
                   ),
                 ),
               ),
               onPressed: () {
-                // Navigate the user to the second screen
-                // `calculateCarbonEmissions.dart`
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Calculate()),
                 );
               },
-              child: const Text(
-                ' Calculate CO2 emissions ',
-                style: TextStyle(
-                  fontSize: 20,
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text(
+                  'Calculate CO2 emissions',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w900,
+                    ),
+                  ),
                 ),
               ),
-            )
-
           ],
         ),
       ),
