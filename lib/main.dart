@@ -74,7 +74,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(100.0),
-                      side: BorderSide(color: Colors.grey.shade900)
+                      side: BorderSide(
+                        color: Colors.grey.shade900,
+                        width: 5,
+                      )
+
                   ),
                 ),
               ),
