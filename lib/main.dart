@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:first_test_app/calculateCarbonEmissions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -99,6 +100,21 @@ class _MyHomePageState extends State<MyHomePage> {
               isFat(),
               style: Theme.of(context).textTheme.headline4,
             ),
+            TextButton(
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+              ),
+              onPressed: () {
+                // Navigate the user to the second screen
+                // `calculateCarbonEmissions.dart`
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Calculate()),
+                );
+              },
+              child: const Text('Calculate CO2 emissions'),
+            )
+
           ],
         ),
       ),
