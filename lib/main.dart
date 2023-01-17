@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'calculateCarbonEmissions.dart';
+import 'main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,6 +45,24 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int _selectedIndex = 0;
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  static const List<Widget> _pages = <Widget>[
+    Calculate(),
+    MainPage(),
+    Icon(
+      Icons.camera,
+      size: 150,
+    ),
+  ];
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,55 +71,37 @@ class _MyHomePageState extends State<MyHomePage> {
       //   // the App.build method, and use it to set our appbar title.
       //   title: Text(widget.title),
       // ),
+
+      bottomNavigationBar: BottomNavigationBar(
+        selectedFontSize: 15,
+        selectedIconTheme: const IconThemeData(color: Colors.blueAccent, size: 30),
+        selectedItemColor: Colors.blueAccent,
+        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+
+        // Update the current selected item on tap
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+
+
+        items: const <BottomNavigationBarItem> [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calculate_outlined),
+            label: "Calculate",
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label:"Home",
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_balance_rounded),
+              label:"Bread",
+          ),
+        ],
+      ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SvgPicture.asset(
-                'assets/svg/sers-eco_logo.svg',
-                width: MediaQuery.of(context).size.width * 0.5,
-              ),
-            ),
-
-            // Button to navigate user to `calculateCarbonEmissions`
-            TextButton(
-              style: ButtonStyle(
-                  // backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade900),
-                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(100.0),
-                      side: BorderSide(
-                        color: Colors.grey.shade900,
-                        width: 5,
-                      )
-
-                  ),
-                ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Calculate()),
-                );
-              },
-              child: const Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Text(
-                  'Calculate CO2 emissions',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                ),
-              ),
-          ],
-        ),
+        child: _pages.elementAt(_selectedIndex),
       ),
     );
   }
