@@ -14,9 +14,9 @@ class _ClassNameState extends State<TrackEnergy> {
     return Scaffold(
       appBar: AppBar(title:const Text("Energy Tracker")),
 
-      body: Form(
+      body: const Form(
         child: Padding(
-
+          padding: EdgeInsets.all(16.0),
         ),
       )
     );
