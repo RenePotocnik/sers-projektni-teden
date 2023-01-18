@@ -13,15 +13,12 @@ class _ClassNameState extends State<TrackEnergy> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:const Text("Energy Tracker")),
-      body: const Center(
-        child: Text(
-          "Test text",
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 40.0,
-          )
-        )
-      ),
+
+      body: Form(
+        child: Padding(
+
+        ),
+      )
     );
   }
 }
