@@ -7,9 +7,6 @@ class Calculate extends StatefulWidget {
   State<Calculate> createState() => _ClassNameState();
 }
 
-
-
-
 class _ClassNameState extends State<Calculate> {
   num _emissions = 0.0;
   var txtController = TextEditingController();
