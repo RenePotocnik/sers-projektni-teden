@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Projektni Teden',
       // Set the theme to the system default; `theme` or `darkTheme`
-      theme: ThemeData(primarySwatch: Colors.green),
-      darkTheme: ThemeData.dark(),
-      themeMode: ThemeMode.system,
+      theme: ThemeData(primarySwatch: Colors.grey),
+      // darkTheme: ThemeData.dark(),
+      // themeMode: ThemeMode.system,
 
       home: const MyHomePage(title: 'SERS ECO - Projektni Teden',),
     );
@@ -45,7 +45,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
