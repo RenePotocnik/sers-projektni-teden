@@ -7,9 +7,6 @@ class Calculate extends StatefulWidget {
   State<Calculate> createState() => _ClassNameState();
 }
 
-
-
-
 class _ClassNameState extends State<Calculate> {
   num _emissions = 0.0;
   var txtController = TextEditingController();
@@ -31,7 +28,7 @@ class _ClassNameState extends State<Calculate> {
           padding: const EdgeInsets.all(16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+          children: [
               TextFormField(
                 controller: txtController,
                 onChanged: (String value) {

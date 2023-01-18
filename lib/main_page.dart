@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'calculateCarbonEmissions.dart';
 
-
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
 
