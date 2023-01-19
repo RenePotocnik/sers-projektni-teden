@@ -62,6 +62,7 @@ flutter:
   assets:
     - assets/svg/
     - assets/icons/
+    - assets/gifs/
 
   fonts:
     - family: Andika
