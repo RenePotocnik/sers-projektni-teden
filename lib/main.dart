@@ -4,8 +4,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'calculateCarbonEmissions.dart';
 import 'main_page.dart';
 
+import 'page/main2.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp2());
 }
 
 class MyApp extends StatelessWidget {
