@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
-import 'package:sizer/sizer.dart';
 import '../core/res/color.dart';
-import '../core/routes/routes.dart';
 import '../widgets/circle_gradient_icon.dart';
 import '../widgets/task_group.dart';
 
@@ -31,11 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0,
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: SvgPicture.asset(
               "assets/svg/sers-eco_logo-cropped.svg",
               semanticsLabel: "SERS ECO",
-              width: 80,
+              width: 60,
             )
           )
         ],

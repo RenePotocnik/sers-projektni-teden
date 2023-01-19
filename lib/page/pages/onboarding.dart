@@ -11,7 +11,6 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,12 +47,16 @@ class _BoardingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 50,),
+        const SizedBox(
+          height: 50,
+        ),
         SvgPicture.asset(
           "assets/svg/sers-eco_logo.svg",
           height: MediaQuery.of(context).size.height * 0.25,
         ),
-        SizedBox(height: 70,),
+        const SizedBox(
+          height: 70,
+        ),
         Text(
           "SERS ECO",
           style: TextStyle(
@@ -68,7 +71,7 @@ class _BoardingWidget extends StatelessWidget {
         ),
         Text(
           "Pridruži se gibanju 0.0 emisij\n"
-              "in sodeluj z S3R5eco",
+          "in sodeluj z S3R5eco",
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.grey[700],
@@ -76,15 +79,15 @@ class _BoardingWidget extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        const SizedBox(height: 70,),
+        const SizedBox(
+          height: 70,
+        ),
         CircleGradientIcon(
           iconSize: 40,
           color: Colors.blue,
           onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(builder: ((context) => const HomeScreen()))
-            );
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: ((context) => const HomeScreen())));
           },
           icon: Icons.arrow_right_alt_rounded,
         ),
