@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import '../core/res/color.dart';
 
-class TaskGroupContainer extends StatelessWidget {
+class OptionGroupContainer extends StatelessWidget {
   final MaterialColor color;
   final bool? isSmall;
   final IconData icon;
-  final String taskGroup;
-  final num taskCount;
-  const TaskGroupContainer({
+  final String optionGroup;
+  const OptionGroupContainer({
     Key? key,
     required this.color,
     this.isSmall = false,
     required this.icon,
-    required this.taskGroup,
-    required this.taskCount,
+    required this.optionGroup,
   }) : super(key: key);
 
   @override
@@ -50,7 +48,7 @@ class TaskGroupContainer extends StatelessWidget {
           ),
           const Spacer(),
           Text(
-            taskGroup,
+            optionGroup,
             maxLines: 4,
             overflow: TextOverflow.fade,
             style: const TextStyle(
