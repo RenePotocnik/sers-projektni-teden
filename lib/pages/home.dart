@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
 import '../core/res/color.dart';
-import '../widgets/circle_gradient_icon.dart';
+import 'calculate_carbon_emissions.dart';
 import '../widgets/option_group.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -108,17 +108,28 @@ class _HomeScreenState extends State<HomeScreen> {
       crossAxisCount: 2,
       mainAxisSpacing: 15,
       crossAxisSpacing: 15,
-      children: const [
+      children: [
         StaggeredGridTile.count(
           crossAxisCellCount: 1,
           mainAxisCellCount: 1.3,
-          child: OptionGroupContainer(
-            color: Colors.pink,
-            icon: Icons.menu_book_rounded,
-            optionGroup: "Računanje količine izpuščenega CO2",
+          child: GestureDetector(
+            onTap: (){
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Calculate())
+              );
+            },
+            child: const Hero(
+              tag: "co2calculation",
+              child: OptionGroupContainer(
+                color: Colors.pink,
+                icon: Icons.menu_book_rounded,
+                optionGroup: "Računanje količine izpuščenega CO2",
+              ),
+            ),
           ),
         ),
-        StaggeredGridTile.count(
+        const StaggeredGridTile.count(
           crossAxisCellCount: 1,
           mainAxisCellCount: 1,
           child: OptionGroupContainer(
@@ -128,7 +139,7 @@ class _HomeScreenState extends State<HomeScreen> {
             optionGroup: "Novice in Članki",
           ),
         ),
-        StaggeredGridTile.count(
+        const StaggeredGridTile.count(
           crossAxisCellCount: 1,
           mainAxisCellCount: 1.3,
           child: OptionGroupContainer(
@@ -137,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
             optionGroup: "Bread Butter Bread",
           ),
         ),
-        StaggeredGridTile.count(
+        const StaggeredGridTile.count(
           crossAxisCellCount: 1,
           mainAxisCellCount: 1,
           child: OptionGroupContainer(
