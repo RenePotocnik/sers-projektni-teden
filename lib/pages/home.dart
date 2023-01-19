@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../core/res/color.dart';
 import 'articles.dart';
@@ -58,17 +59,17 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 10,
+                  height: 80,
                 ),
                 _taskHeader(),
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 buildGrid(),
                 const SizedBox(
                   height: 25,
                 ),
-                usageHeader(),
+                // usageHeader(),  ////////////////////////////// uncomment this to get `poraba` below
                 const SizedBox(
                   height: 10,
                 ),
@@ -93,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
           style: TextStyle(
             color: Colors.blueGrey[900],
             fontWeight: FontWeight.w700,
-            fontSize: 24,
+            fontSize: 30,
           ),
           toolbarOptions: const ToolbarOptions(
             copy: true,
@@ -157,17 +158,21 @@ class _HomeScreenState extends State<HomeScreen> {
           child: OptionGroupContainer(
             color: Colors.green,
             icon: Icons.article,
-            optionGroup: "Bread Butter Bread",
+            optionGroup: "Napotki za Manjše Onesnaževanje",
           ),
         ),
-        const StaggeredGridTile.count(
+        StaggeredGridTile.count(
           crossAxisCellCount: 1,
           mainAxisCellCount: 1,
-          child: OptionGroupContainer(
-            color: Colors.blue,
-            isSmall: true,
-            icon: Icons.single_bed_sharp,
-            optionGroup: "Nekaj druga",
+          child: GestureDetector(
+            // onTap: () => launchUrl(Uri.parse("https://sk10-prt23.dijak.sersmb.net/")),
+            onTap: () => launch("https://sk10-prt23.dijak.sersmb.net/"),
+            child: const OptionGroupContainer(
+              color: Colors.blue,
+              isSmall: true,
+              icon: Icons.web,
+              optionGroup: "Spletna Stran Projekta ",
+            ),
           ),
         ),
       ],
@@ -203,91 +208,11 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-// class OnGoingTask extends StatelessWidget {
-//   const OnGoingTask({
-//     Key? key,
-//   }) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       padding: const EdgeInsets.all(
-//         20,
-//       ),
-//       decoration: BoxDecoration(
-//         color: Colors.white,
-//         borderRadius: BorderRadius.circular(15),
-//       ),
-//       width: 100.w,
-//       child: Row(
-//         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//         children: [
-//           SizedBox(
-//             width: 60.w,
-//             child: Column(
-//               crossAxisAlignment: CrossAxisAlignment.start,
-//               children: [
-//                 Text(
-//                   "Startup Website Design with Responsive",
-//                   style: TextStyle(
-//                     color: Colors.blueGrey[700],
-//                     fontWeight: FontWeight.bold,
-//                     fontSize: 18,
-//                   ),
-//                   overflow: TextOverflow.ellipsis,
-//                   maxLines: 2,
-//                 ),
-//                 const SizedBox(
-//                   height: 10,
-//                 ),
-//                 Row(
-//                   children: [
-//                     Icon(
-//                       Icons.timelapse,
-//                       color: Colors.purple[300],
-//                     ),
-//                     const SizedBox(
-//                       width: 10,
-//                     ),
-//                     Text(
-//                       "10:00 AM - 12:30PM",
-//                       style: TextStyle(
-//                         color: Colors.grey[600],
-//                         fontSize: 14,
-//                       ),
-//                     ),
-//                   ],
-//                 ),
-//                 const SizedBox(
-//                   height: 10,
-//                 ),
-//                 Container(
-//                   padding: const EdgeInsets.symmetric(
-//                     vertical: 4,
-//                     horizontal: 8,
-//                   ),
-//                   decoration: BoxDecoration(
-//                     color: Colors.purple[50],
-//                     borderRadius: BorderRadius.circular(5),
-//                   ),
-//                   child: const Text(
-//                     "Complete - 80%",
-//                     style: TextStyle(
-//                       color: Colors.purple,
-//                     ),
-//                   ),
-//                 )
-//               ],
-//             ),
-//           ),
-//           const Icon(
-//             Icons.rocket_rounded,
-//             size: 60,
-//             color: Colors.orange,
-//           )
-//         ],
-//       ),
-//     );
-//   }
-// }
+
+Future<void> _launchUrl(Uri _url) async {
+  if (!await launchUrl(_url)) {
+    throw "Could not open $_url";
+  }
+}
+
 

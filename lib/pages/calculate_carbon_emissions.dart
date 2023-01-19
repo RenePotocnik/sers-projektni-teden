@@ -95,10 +95,17 @@ class _ClassNameState extends State<Calculate> {
                   "Proizvedli ste $_emissions kg CO2",
                   style: Theme.of(context).textTheme.headline6,
                 ),
+
+                const SizedBox(height: 200,),
+
+                Image(image: const AssetImage("assets/images/nature.png"),
+                  width: MediaQuery.of(context).size.width * 0.6,
+                ),
               ],
-            )
+            ),
           ),
         ),
+        resizeToAvoidBottomInset: false,
       ),
     );
   }
