@@ -38,6 +38,7 @@ dependencies:
   intl: ^0.18.0
   shared_preferences: ^2.0.16
   after_layout: ^1.2.0
+  url_launcher: ^6.1.7
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -65,6 +66,7 @@ flutter:
     - assets/svg/
     - assets/icons/
     - assets/gifs/
+    - assets/images/
 
   fonts:
     - family: Andika

@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
 import '../core/res/color.dart';
+import 'articles.dart';
 import 'calculate_carbon_emissions.dart';
 import '../widgets/option_group.dart';
 
@@ -123,20 +124,31 @@ class _HomeScreenState extends State<HomeScreen> {
               tag: "co2calculation",
               child: OptionGroupContainer(
                 color: Colors.pink,
-                icon: Icons.menu_book_rounded,
+                icon: Icons.cloud_queue_sharp,
                 optionGroup: "Računanje količine izpuščenega CO2",
               ),
             ),
           ),
         ),
-        const StaggeredGridTile.count(
+        StaggeredGridTile.count(
           crossAxisCellCount: 1,
           mainAxisCellCount: 1,
-          child: OptionGroupContainer(
-            color: Colors.orange,
-            isSmall: true,
-            icon: Icons.newspaper,
-            optionGroup: "Novice in Članki",
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Articles())
+              );
+            },
+            child: const Hero(
+              tag: "articles",
+              child: OptionGroupContainer(
+                color: Colors.orange,
+                isSmall: true,
+                icon: Icons.newspaper,
+                optionGroup: "Novice in Članki",
+              ),
+            ),
           ),
         ),
         const StaggeredGridTile.count(

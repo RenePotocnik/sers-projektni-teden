@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 import 'core/res/color.dart';
-import 'core/routes/routes.dart';
 import 'pages/home.dart';
 import 'pages/onboarding.dart';
 
@@ -21,8 +20,6 @@ class MyApp extends StatelessWidget {
         title: 'SERS ECO',
         debugShowCheckedModeBanner: false,
         theme: AppColors.getTheme,
-        // initialRoute: Routes.onBoarding,
-        onGenerateRoute: RouterGenerator.generateRoutes,
         home: Splash(),
       );
     });
