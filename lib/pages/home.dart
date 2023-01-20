@@ -9,6 +9,7 @@ import 'articles.dart';
 import 'calculate_carbon_emissions.dart';
 import '../widgets/option_group.dart';
 import 'suggestions.dart';
+import 'onboarding.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -34,10 +35,18 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: SvgPicture.asset(
-              "assets/svg/sers-eco_logo-cropped.svg",
-              semanticsLabel: "SERS ECO",
-              width: 60,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const OnboardingScreen())
+                );
+              },
+              child: SvgPicture.asset(
+                "assets/svg/sers-eco_logo-cropped.svg",
+                semanticsLabel: "SERS ECO",
+                width: 60,
+              ),
             )
           )
         ],
@@ -60,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 80,
+                  height: 20,
                 ),
                 _taskHeader(),
                 const SizedBox(
@@ -114,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
       children: [
         StaggeredGridTile.count(
           crossAxisCellCount: 1,
-          mainAxisCellCount: 1.3,
+          mainAxisCellCount: 1.5,
           child: GestureDetector(
             onTap: (){
               Navigator.push(
@@ -134,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         StaggeredGridTile.count(
           crossAxisCellCount: 1,
-          mainAxisCellCount: 1,
+          mainAxisCellCount: 1.2,
           child: GestureDetector(
             onTap: () {
               Navigator.push(
@@ -155,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         StaggeredGridTile.count(
           crossAxisCellCount: 1,
-          mainAxisCellCount: 1.3,
+          mainAxisCellCount: 1.6,
           child: GestureDetector(
             onTap: () {
               Navigator.push(
@@ -175,7 +184,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         StaggeredGridTile.count(
           crossAxisCellCount: 1,
-          mainAxisCellCount: 1,
+          mainAxisCellCount: 1.3,
           child: GestureDetector(
             // onTap: () => launchUrl(Uri.parse("https://sk10-prt23.dijak.sersmb.net/")),
             onTap: () => launch("http://sk10-prt23.dijak.sersmb.net/"),
