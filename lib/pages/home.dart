@@ -8,6 +8,7 @@ import '../core/res/color.dart';
 import 'articles.dart';
 import 'calculate_carbon_emissions.dart';
 import '../widgets/option_group.dart';
+import 'suggestions.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -152,13 +153,24 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        const StaggeredGridTile.count(
+        StaggeredGridTile.count(
           crossAxisCellCount: 1,
           mainAxisCellCount: 1.3,
-          child: OptionGroupContainer(
-            color: Colors.green,
-            icon: Icons.article,
-            optionGroup: "Napotki za Manjše Onesnaževanje",
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Suggestions())
+              );
+            },
+            child: const Hero(
+              tag: "napotki",
+              child: OptionGroupContainer(
+                color: Colors.green,
+                icon: Icons.article,
+                optionGroup: "Napotki za Manjše Onesnaževanje",
+              ),
+            ),
           ),
         ),
         StaggeredGridTile.count(
@@ -166,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisCellCount: 1,
           child: GestureDetector(
             // onTap: () => launchUrl(Uri.parse("https://sk10-prt23.dijak.sersmb.net/")),
-            onTap: () => launch("https://sk10-prt23.dijak.sersmb.net/"),
+            onTap: () => launch("http://sk10-prt23.dijak.sersmb.net/"),
             child: const OptionGroupContainer(
               color: Colors.blue,
               isSmall: true,
