@@ -15,7 +15,7 @@ Create a mobile app that **helps** to solve one of the following issues:
 The website was made as a **tool** to present the **idea, team, work process and the app itself** 
 to the teachers, judges, and other teams.
 
-Most of the work on the website was done by [Nejc](https://github.com/nkonjicek), \the website's 
+Most of the work on the website was done by [Nejc](https://github.com/nkonjicek),\the website's 
 repository can be found [here](https://github.com/nkonjicek/nkonjicek.github.io).
 
 [***Temporary link to the website***](http://sk10-prt23.dijak.sersmb.net/)
