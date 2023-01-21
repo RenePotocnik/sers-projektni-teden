@@ -15,17 +15,17 @@ Create a mobile app that **helps** to solve one of the following issues:
 The website was made as a **tool** to present the **idea, team, work process and the app itself** 
 to the teachers, judges, and other teams.
 
-Most of the work on the website was done by [Nejc](https://github.com/nkonjicek),\the website's 
-repository can be found [here](https://github.com/nkonjicek/nkonjicek.github.io).
+Most of the work on the website was done by [Nejc](https://github.com/nkonjicek),\
+the website's repository can be found [here](https://github.com/nkonjicek/nkonjicek.github.io).
 
 [***Temporary link to the website***](http://sk10-prt23.dijak.sersmb.net/)
 
 # The App
 
 The app was solely developed by [**me**](https://github.com/RenePotocnik) over a span of 5 days.\
-The app would have had more features and would be more polished if I had more time,\but I am quite
-happy with how it came out, especially as it was my **first time** developing a mobile app, let 
-alone using flutter or dart.
+The app would have had more features and would be more polished if I had more time,\
+but I am quite happy with how it came out, especially as it was my **first time** developing a 
+mobile app, let alone using flutter or dart.
 
 The `.apk` file to download the app can be found in the 
 [**release**](https://github.com/RenePotocnik/sers-projektni-teden/releases/tag/v1.1) 
